@@ -12,9 +12,8 @@ function App() {
         setTimer((timer) => timer + 1);
         // setTimer(timer);
       }, 1000);
-    }
-    else if(control === "stop") setTimer(0);
-    
+    } else if (control === "stop") setTimer(0);
+
     toHHMMSS(timer);
   }, [timer, control]);
 
@@ -67,7 +66,7 @@ function App() {
             setControl("pause");
             // setControl("running");
             if (setControl == "pause") {
-              setControl("running")
+              setControl("running");
             }
           }}
         >
